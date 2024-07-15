@@ -4,6 +4,10 @@ import numpy as np
 import glob
 import random
 
+'''Video Used
+https://drive.google.com/file/d/1j-2HLHtt-DwkFXXZUOf01p4AOFnWlDJ9/view?usp=drive_link
+'''
+
 net = cv2.dnn.readNet("yolov3_training_last.weights", "yolov3_testing.cfg")
 classes = ["car"]
 images_path = glob.glob("cars_test1/*.jpg")
