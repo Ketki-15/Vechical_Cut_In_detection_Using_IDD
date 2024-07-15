@@ -8,7 +8,7 @@ y1, y2 = 383, 530
 ym = (y1 + y2) / 2
 
 tpo, tpr = 0, 0
-cap = cv2.VideoCapture("Resources/AUH roads2.mp4")
+cap = cv2.VideoCapture("https://drive.google.com/file/d/1-BvKSX6vGLZYOS8_OiLQXsHu1hsyC4qJ/view?usp=drive_link")
 
 def roi(x, y, img):
     m1 = (y2 - y1) / (x4 - x1)
@@ -65,7 +65,7 @@ while True:
                 confidences.append(float(confidence))
                 class_ids.append(class_id)
 
-    indexes = cv2.dnn.NMSBoxes(boxes, confidences, 0.5, 0.4)
+    indexes = cv2.dnn.NMSBoxes(boxes, confidences, 0.5, 0.7)
 
     if len(indexes) > 0:
         for i in indexes.flatten():
