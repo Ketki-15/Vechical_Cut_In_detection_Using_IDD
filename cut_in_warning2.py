@@ -11,7 +11,7 @@ y1, y2 = 383, 530
 ym = (y1 + y2) / 2
 
 tpo, tpr = 0, 0
-cap = cv2.VideoCapture("Resources/AUH roads2.mp4")
+cap = cv2.VideoCapture("https://drive.google.com/file/d/1-BvKSX6vGLZYOS8_OiLQXsHu1hsyC4qJ/view?usp=drive_link")
 
 def roi(x, y, img):
     m1 = (y2 - y1) / (x4 - x1)
