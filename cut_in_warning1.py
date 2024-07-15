@@ -16,7 +16,7 @@ lane_y1 = 383
 lane_y2 = 530
 lane_ymid = (lane_y1 + lane_y2) / 2
 
-video_path = "Resources/AUH roads2.mp4"
+video_path = "https://drive.google.com/file/d/1-BvKSX6vGLZYOS8_OiLQXsHu1hsyC4qJ/view?usp=drive_link"
 cap = cv2.VideoCapture(video_path)
 def get_roi(x, y, img):
     slope1 = (lane_y2 - lane_y1) / (lane_x4 - lane_x1)
